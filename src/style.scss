@@ -1,0 +1,187 @@
+.edit-profile:hover {
+  &::after {
+    content: "\f304";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    font-size: 25px;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.822);
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 95%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    );
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+.edit-profile {
+  position: relative;
+}
+
+//swiper
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.mySwiper2 {
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ql-editor {
+  min-height: 120px;
+}
+
+/* Dropzone */
+.drop {
+  // max-width: 50%;
+  // margin: 10px auto;
+  // margin-top: 30px;
+}
+.dropzone {
+  max-width: 50%;
+  margin: 10px auto;
+  margin-top: 30px;
+  padding: 30px;
+  min-height: 200px;
+
+  border: 2px dashed #bdbdbd;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .dropzone {
+    max-width: 100%;
+  }
+}
+.dropzone-active {
+  background-color: #eee;
+  border: 2px solid #1b262c92;
+}
+
+/* Images */
+.file-list {
+  display: flex;
+
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.file-item {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  margin: 10px;
+  position: relative;
+  &:hover {
+    opacity: 0.8;
+  }
+  & .file-item-delete-icon {
+    visibility: hidden;
+  }
+  &:hover .file-item-delete-icon {
+    visibility: visible;
+  }
+}
+.file-img {
+  width: 100%;
+  height: 100%;
+}
+
+.rating-button {
+  width: fit-content;
+  border-radius: 2px;
+  padding: 4px 8px;
+  margin-right: 9px;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+}
+
+//truncate
+.truncate {
+  overflow: hidden;
+  min-height: 140px;
+  max-height: 140px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 83, 94);
+  border-radius: 100px;
+}
+.search-area {
+  border: 0;
+  box-shadow: 0 1px 2px rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+  color: rgb(60, 64, 67);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 8px auto 0 auto;
+  align-items: center;
+  border-radius: 21px;
+}
+.truncate-map {
+  text-overflow: ellipsis;
+
+  /* Needed to make it work */
+  overflow: hidden;
+  white-space: nowrap;
+}
