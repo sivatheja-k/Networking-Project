@@ -1,35 +1,32 @@
 # UTA Attendance System
 
-In this documentation we show how to use our detection service with webcamera. **NOTE:** we have chosen reactjs as it is today's one of the most popular UI library.
+In this documentation we show how to run our project locally on your machine. **NOTE:** we have chosen reactjs as it is today's one of the most popular UI library.
+
+Web Application Deployed at: 
+
+Link 1: https://app.utasystem.ml/
+Link 2: https://uta-attendance-system.web.app/ ( Checkout this for using the app without any routing issues)
+
+Backend Deployed at:
+
+Link: https://api.utasystem.ml/
+
+Instructions:
 
 1. Clone our repository
-2. Enter to ```webcam_demo``` folder and install packages
 
-``` cd webcam_demo```
+2. Enter to ```NETWORKING-PROJECT``` folder and install packages
+
+``` cd NETWORKING-PROJECT```
 
 ```npm install```
 
-3. Change detection API key inside ```src > App.js``` line ```40```
+3. Change detection API key inside ```src > App.js``` line ```9,13``` ( Not necessary if trying to use at the time of project demonstration!)
 
 4. Start project
 
 ```npm start```
 
-5. Click ```video start``` button to start your webcamera 
+5. Now ```Register and Login``` to use the application
 
-*OR follow below instructions to create project by yourself*
-
-1. Install reactjs
-
-```npx create-react-app compreface-demo```
-
-2. Enter to project folder
-
-```cd compreface-demo```
-
-3. Install CompreFace SDK
-
-```npm i @exadel/compreface-js-sdk```
-
-4. Create your component and copy/past following code. NOTE: We have used functional component and video tag used to connect to your webcamera and canvas tags used for drawing square and some extra data.
 
